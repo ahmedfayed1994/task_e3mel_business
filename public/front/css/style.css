@@ -223,7 +223,9 @@ label {
 }
 
 .card {
-    height: 270px;
+    margin: 7px 0;
+    display: flex;
+    padding: 4px;
 }
 
 .card:hover {
@@ -239,6 +241,10 @@ label {
     font-size: 0.78rem;
     padding-bottom: 8px;
     font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
 }
 
 .course .fa-star {
