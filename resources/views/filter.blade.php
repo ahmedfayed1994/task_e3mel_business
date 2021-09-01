@@ -17,9 +17,17 @@
                     <h6>ahmed Fayed</h6>
                 </div>
                 <div class="text-muted description">{!!$course->description!!}</div>
-                <div class="d-flex align-items-center course"><span class="fas fa-star"></span>
-                    <span class="fas fa-star"></span> <span class="fas fa-star"></span> <span
-                        class="fas fa-star"></span> <span class="far fa-star"></span></div>
+                <div class="d-flex align-items-center course">
+                    @for($i = 0; $i < $course->rating; $i++)
+                        <span class="fas fa-star"></span>
+                    @endfor
+
+                    @for($i = 5; $i > $course->rating; $i--)
+                        <span class="far fa-star"></span>
+                    @endfor
+
+                    <span style="font-size: 13px; color: #b0afaf; margin-left: 2px">(1200)</span>
+                </div>
             </div>
         </div>
     </div>
