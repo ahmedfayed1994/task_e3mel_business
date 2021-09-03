@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Scopes\LatestScope;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -17,5 +18,11 @@ class Course extends Model
     public function category(): BelongsTo
     {
         return $this->belongsTo(Category::class);
+    }
+
+    public static function boot()
+    {
+        parent::boot();
+        static::addGlobalScope(new LatestScope());
     }
 }

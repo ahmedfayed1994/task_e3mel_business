@@ -73,7 +73,7 @@
                                    id="{{$category->name}}" type="radio"
                                    class=" category">
 
-                            <label for="{{$category->name}}">{{$category->name}}</label>
+                            <label style="width: 220px" for="{{$category->name}}">{{$category->name}} <span style="float: right">({{$category->course_count}})</span></label>
                         </div>
                     @endforeach
                 </div>
@@ -192,6 +192,11 @@
                             </div>
                         @endforeach
                     </div>
+
+                    <div class="d-flex justify-content-center">
+                        {!! $courses->links() !!}
+                    </div>
+
                 </div>
             </section>
         </div>

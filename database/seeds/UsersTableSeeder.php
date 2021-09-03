@@ -12,10 +12,10 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => 'Admin',
-            'email' => 'test@gmail.com',
-            'password' => bcrypt('123456789'),
-        ]);
+        $usersCount = (int)$this->command->ask('How many users would you like?', 20);
+
+        factory(User::class)->state('Admin')->create();
+        factory(User::class, $usersCount)->create();
+
     }
 }

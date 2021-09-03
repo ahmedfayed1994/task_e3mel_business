@@ -8,6 +8,16 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/Scopes/LatestScope.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/Category.php">
           <value>
             <set />
@@ -63,7 +73,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/Scopes/LatestScope.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/composer.json">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/config/database.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/factories/CategoryFactory.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/factories/CourseFactory.php">
           <value>
             <set />
           </value>
@@ -79,6 +109,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/database/migrations/2021_08_25_172854_create_courses_table.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/database/seeds/CoursesTableSeeder.php">
           <value>
             <set />
           </value>
