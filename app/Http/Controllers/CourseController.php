@@ -4,12 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Course;
 use App\Category;
+use App\Http\Requests\CourseRequest;
+use App\Image;
 use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
 use Illuminate\View\View;
 
@@ -22,7 +25,7 @@ class CourseController extends Controller
      */
     public function index()
     {
-        $courses = Course::with('category')->get();
+        $courses = Course::with('category', 'image')->get();
         return view('admin.course.index', compact('courses'));
     }
 
@@ -43,15 +46,8 @@ class CourseController extends Controller
      * @param Request $request
      * @return RedirectResponse
      */
-    public function store(Request $request)
+    public function store(CourseRequest $request)
     {
-        $request->validate([
-            'category_id' => 'required|exists:categories,id',
-            'name' => 'required|max:255',
-            'rating' => 'integer|digits_between:1,5',
-            'level' => Rule::in(['beginner', 'immediate', 'high']),
-            'hours' => 'integer',
-        ]);
 
         $course = new Course();
         $course->category_id = $request->category_id;
@@ -63,8 +59,18 @@ class CourseController extends Controller
         $course->status = 1;
         $course->description = $request->description;
 
-
         $course->save();
+
+        if ($request->hasFile('image')) {
+            $path = $request->file('image')->store('images');
+            $course->image()->save(
+                Image::make([
+                    'path' => $path,
+                    'imageable_type' => $path,
+                    'imageable_id' => $course->id,
+                ])
+            );
+        }
 
         $response = array(
             'message' => 'Course Added Successfully',
@@ -103,17 +109,26 @@ class CourseController extends Controller
      * @param Course $course
      * @return RedirectResponse
      */
-    public function update(Request $request, Course $course): RedirectResponse
+    public function update(CourseRequest $request, Course $course): RedirectResponse
     {
-        $request->validate([
-            'category_id' => 'required|exists:categories,id',
-            'name' => 'required|max:255',
-            'rating' => 'integer|digits_between:1,5',
-            'level' => Rule::in(['beginner', 'immediate', 'high']),
-            'hours' => 'integer',
-        ]);
-
         $course->first();
+
+        if ($request->hasFile('image')) {
+            $path = $request->file('image')->store('images');
+
+            if ($course->image) {
+                Storage::delete($course->image->path);
+                $course->image->path = $path;
+                $course->image->save();
+            }else{
+                $course->image()->save(
+                    Image::make([
+                        'path' => $path,
+                    ])
+                );
+            }
+
+        }
 
         $course->category_id = $request->category_id;
         $course->name = $request->name;
@@ -124,6 +139,7 @@ class CourseController extends Controller
         $course->description = $request->description;
 
         $course->save();
+
 
         $response = array(
             'message' => 'Course Update Successfully',

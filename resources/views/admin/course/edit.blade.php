@@ -24,7 +24,7 @@
                 </h6>
                 <p class="mg-b-20 mg-sm-b-30">Update Course From</p>
 
-                <form method="post" action="{{url('admin/update/courses/'.$course->id)}}">
+                <form method="post" action="{{url('admin/update/courses/'.$course->id)}}" enctype="multipart/form-data">
                     @csrf
                     @method('put')
                     <div class="form-layout">
@@ -104,6 +104,16 @@
                                               name="description">{{$course->description}}</textarea>
                                 </div>
                             </div><!-- col-12 -->
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-control-label">Course Image: <span
+                                            class="tx-danger">*</span></label>
+
+                                    <input type="file" name="image" class="form-control">
+                                </div>
+                            </div>
+
                         </div><!-- row -->
 
                         <br>

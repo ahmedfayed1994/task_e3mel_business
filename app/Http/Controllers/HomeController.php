@@ -19,7 +19,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $courses = Course::where('status', 1)->paginate(15);
+        $courses = Course::with('image')->where('status', 1)->paginate(15);
         $categories = Category::withCount('course')->where('status', 1)->get();
         return view('welcome', compact('courses', 'categories'));
     }

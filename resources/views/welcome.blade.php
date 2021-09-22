@@ -165,8 +165,14 @@
                             <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 pt-md-0 pt-4">
                                 <div class="card">
                                     <h4 class="marketing">Marketing</h4>
-                                    <img class="card-img-top"
-                                         src="https://392821-1236213-1-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2020/06/Marketing.png">
+
+                                    @if($course->image)
+                                        <img class="card-img-top" style="background-size: cover" src="{{asset('storage/'.$course->image->path)}}">
+                                    @else
+                                        <img class="card-img-top" style="background-size: cover"
+                                             src="https://392821-1236213-1-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2020/06/Marketing.png">
+                                    @endif
+
                                     <div class="card-body">
                                         <h6 style="color: #48b83e; font-size: 13px" class="font-weight-bold pt-1">
                                             {{$course->name}}</h6>

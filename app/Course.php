@@ -20,6 +20,11 @@ class Course extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public function image()
+    {
+        return $this->morphOne('App\Image', 'imageable');
+    }
+
     public static function boot()
     {
         parent::boot();

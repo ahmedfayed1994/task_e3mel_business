@@ -65,3 +65,7 @@ U
 %database/seeds/CoursesTableSeeder.php,6\1\615e9fb3abe52ff5a8568ce6d8ecdea3d51ba220
 n
 >database/migrations/2021_08_25_172854_create_courses_table.php,e\0\e0924575cf45d1811554509e06d57cf22c6597f5
+J
+app/Scopes/LatestScope.php,2\b\2b420cc2f400c659a1b9572bf27618632d2e58e7
+S
+#app/Http/Requests/CourseRequest.php,e\f\effc50118081054f8a810be2f566f65988be9088

@@ -92,6 +92,15 @@
                                               placeholder="Enter Course description"></textarea>
                                 </div>
                             </div><!-- col-12 -->
+
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label class="form-control-label">Course Image: <span
+                                            class="tx-danger">*</span></label>
+
+                                    <input type="file" name="image" class="form-control">
+                                </div>
+                            </div>
                         </div><!-- row -->
 
                         <br>
