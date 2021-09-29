@@ -6,12 +6,15 @@ use App\Course;
 use App\Category;
 use App\Http\Requests\CourseRequest;
 use App\Image;
+use App\Mail\CourseMarkedown;
+use App\Mail\NewCourse;
 use Exception;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
 use Illuminate\View\View;
@@ -71,6 +74,10 @@ class CourseController extends Controller
                 ])
             );
         }
+
+        Mail::to("ahmedfayed1000@gmail.com")->send(
+            new CourseMarkedown($course)
+        );
 
         $response = array(
             'message' => 'Course Added Successfully',

@@ -3,6 +3,16 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="$APPLICATION_CONFIG_DIR$/Composer Log/Composer Log.composerLog">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../LaravelGymSystem/composer.json">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/.env">
           <value>
             <set />
@@ -79,6 +89,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/Image.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/Mail/CourseMarkedown.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/Mail/NewCourse.php">
           <value>
             <set />
           </value>
@@ -203,6 +223,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/resources/views/emails/course-markdown.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/emails/newCourse..blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/emails/newCourse.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/resources/views/emails/newCourse.php">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/resources/views/filter.blade.php">
           <value>
             <set />
@@ -234,6 +274,16 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../everything/app/Http/Controllers/Api/client/StoreController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../gym/.env">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../gym/config/database.php">
           <value>
             <set />
           </value>

@@ -1,6 +1,7 @@
 
+C	php:S2041Š"-Remove the parentheses from this "echo" call.(¿º–¯
 CWeb:BoldAndItalicTagsCheck'"Replace this <i> tag by <em>.(¤óÇÉ
-H	php:S2041¤"-Remove the parentheses from this "echo" call.(¨½ÎÃüÿÿÿÿ
-DWeb:BoldAndItalicTagsCheck®"Replace this <i> tag by <em>.(¸Ó¯©
-MWeb:ImgWithoutAltCheck¨"%Add an "alt" attribute to this image.(šŠÅÎþÿÿÿÿ
-C	php:S2041„"-Remove the parentheses from this "echo" call.(¿º–¯
+DWeb:BoldAndItalicTagsCheck´"Replace this <i> tag by <em>.(¸Ó¯©
+H	php:S2041ª"-Remove the parentheses from this "echo" call.(¨½ÎÃüÿÿÿÿ
+OWeb:ImgWithoutAltCheckª"%Add an "alt" attribute to this image.(ˆÇô°8Ü†âéÀ/
+TWeb:ImgWithoutAltCheck¬"%Add an "alt" attribute to this image.(œç„Üûÿÿÿÿ8Ü†âéÀ/
