@@ -8,19 +8,18 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class CourseMarkedown extends Mailable
+class CourseMarkedown extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
-    public $course;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct(Course $course)
+    public function __construct()
     {
-        $this->course = $course;
+
     }
 
     /**

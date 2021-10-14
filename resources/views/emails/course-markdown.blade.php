@@ -8,7 +8,7 @@ Button Text
 @endcomponent
 
 @component('mail::panel')
-    {{$course->description}}
+    hello hello
 @endcomponent
 
 Thanks,<br>

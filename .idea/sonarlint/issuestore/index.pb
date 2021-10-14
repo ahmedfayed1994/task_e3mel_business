@@ -87,3 +87,15 @@ Z
 *resources/views/emails/newCourse.blade.php,e\9\e95ae763b974935a107712edaeae19d6c8597c55
 F
 app/Mail/NewCourse.php,f\8\f8c35e898a2559a0f8f60ce12438d2c49e7bfa51
+@
+config/queue.php,e\b\eb49dc3fa7268b6ade2466fb9f9bc11bb4d71410
+`
+0resources/views/emails/course-markdown.blade.php,2\6\26a3b01b7550f1147abc7b641f09fc9f531083f4
+L
+app/Mail/CourseMarkedown.php,4\3\439c70e6b108717bfcbff5bb45c05306e9dda654
+U
+%app/Jobs/NotifyUsersCreateCourese.php,5\3\53777159fe1801b05eb71511ac0ab2afa3de4da5
+C
+app/Http/Kernel.php,4\0\405f423e61f666bcedb754ae8befdce9e746176e
+F
+app/Console/Kernel.php,7\c\7cc3fc289d685e79a47c29e2cb905c549625e76b

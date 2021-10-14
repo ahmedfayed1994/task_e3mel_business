@@ -3,6 +3,11 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$APPLICATION_CONFIG_DIR$/Composer Log/Composer Log.composerLog">
           <value>
             <set />
@@ -29,6 +34,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/Category.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/Console/Kernel.php">
           <value>
             <set />
           </value>
@@ -89,6 +99,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/app/Image.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/Jobs/NotifyUsersCreateCourese.php">
           <value>
             <set />
           </value>
@@ -284,6 +299,46 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/../gym/config/database.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../upload-file-task/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../upload-file-task/app/Http/Controllers/ConsumerController.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../upload-file-task/app/Http/Requests/ConsumerRequest.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../upload-file-task/app/Models/Consumer.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../upload-file-task/app/Services/uploadConsumer.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../upload-file-task/database/migrations/2021_10_04_134812_consumer.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../upload-file-task/resources/views/create.blade.php">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../upload-file-task/routes/web.php">
           <value>
             <set />
           </value>
